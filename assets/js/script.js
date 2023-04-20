@@ -1,15 +1,15 @@
 $(function () {
   // ****** Time Slot ID's ****** //
   let timeSlot = [
-    { id: "hour-9", hour: 9},
-    { id: "hour-10", hour: 10},
-    { id: "hour-11", hour: 11},
-    { id: "hour-12", hour: 12},
-    { id: "hour-13", hour: 13},
-    { id: "hour-14", hour: 14},
-    { id: "hour-15", hour: 15},
-    { id: "hour-16", hour: 16},
-    { id: "hour-17", hour: 17}
+    {id: "#hour-9", hour: 9},
+    {id: "#hour-10", hour: 10},
+    {id: "#hour-11", hour: 11},
+    {id: "#hour-12", hour: 12},
+    {id: "#hour-13", hour: 13},
+    {id: "#hour-14", hour: 14},
+    {id: "#hour-15", hour: 15},
+    {id: "#hour-16", hour: 16},
+    {id: "#hour-17", hour: 17}
   ];
 
   let userEntry = [];
@@ -38,6 +38,7 @@ $(function () {
     }});
 }
 
+  // ****** Changes text box color based on time ****** //
   $.each(timeSlot, function (key, value) {
     let idHour = value.id;
 
@@ -55,4 +56,5 @@ $(function () {
       $(idHour).addClass("future");
     }
   });
+
 });
